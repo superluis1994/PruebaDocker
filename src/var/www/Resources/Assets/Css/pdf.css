@@ -1,0 +1,193 @@
+/* Estilos básicos para la estructura de la página y el texto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body,
+h1,
+h2,
+h3,
+table {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 800px; /* Limita el ancho máximo para centrar el contenido */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+/* Flexbox container */
+.d-flex {
+    display: flex !important;
+}
+
+/* Justify content between */
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-3,
+.mb-4 {
+  margin-bottom: 1.2rem;
+}
+
+/* Estilos de tabla mejorados para alinear y asegurar el diseño correcto */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+.text-left {
+  text-align: left !important;
+}
+
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #dee2e6;
+  word-wrap: break-word; /* Asegura que el texto se ajuste dentro de la celda */
+  max-width: 200px; /* Establece un ancho máximo para las celdas para mejor manejo del espacio */
+}
+.table th {
+  background-color: grey;
+  color: white;
+  padding: 8px;
+}
+
+.table thead th {
+  text-align: left;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+} */
+  /* Estilo para la primera columna */
+  th:first-child, td:first-child {
+    width: 60%; /* Define el ancho fijo deseado */
+  }
+  th:nth-child(2), td:nth-child(2) {
+    width: 80px; /* Ancho fijo para la segunda columna */
+  }
+  th:nth-child(3), td:nth-child(2) {
+    width: 30px; /* Ancho fijo para la segunda columna */
+  }
+.text-end {
+  text-align: right;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin: 0 0 10px 0; /* Reduce el espacio excesivo */
+}
+.logo-container {
+  position: relative; /* Contenedor relativo para posicionar el logo absolutamente dentro de él */
+}
+.logo {
+  position: absolute;
+  right: 0; /* Alinea el logo a la derecha */
+  top: 0; /* Alinea el logo en la parte superior */
+  width: 100px; /* Establece el ancho del logo */
+  height: auto; /* Mantiene la proporción del logo */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+.header h1 {
+  margin-bottom: 0;
+}
+.logo {
+  height: 100px;
+  width: auto;
+}
+.custom-hr {
+  width: 80%; /* Ajusta esto para cambiar el ancho del <hr> */
+  border: 1px solid #8e0e0e; /* Define el color y el estilo del borde */
+  margin-left: 0; /* Alinea el <hr> al inicio (izquierda) del contenedor */
+}
+.header img {
+  margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+/* .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+   */
+
+
+   /* .float-container {
+    width: 100%;
+    overflow: hidden; /* Para contener los elementos flotantes */
+
+
+
+   .float-item {
+    float: left;
+    width: 48%; /* Ajusta el ancho según sea necesario */
+    margin-right: 2%; /* Espacio entre los divs */
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+}
+.float-item:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+
+
+
+
+
+/* Margen superior */
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-1 {
+    margin-top: 0.25rem !important; /* 4px */
+}
+
+.mt-2 {
+    margin-top: 0.5rem !important; /* 8px */
+}
+
+.mt-3 {
+    margin-top: 1.2rem !important; /* 16px */
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important; /* 24px */
+}
+
+.mt-5 {
+    margin-top: 3rem !important; /* 48px */
+}
+
+.mt-auto {
+    margin-top: auto !important;
+}
+
+
+
+
+
+  

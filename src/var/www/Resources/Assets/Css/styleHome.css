@@ -1,0 +1,107 @@
+/* Estilos generales de la tarjeta */
+.card {
+    position: relative;
+    /* Tus otros estilos de .card van aquí */
+}
+/* estos estilos mantienen estable select2 buscador*/
+.select2-container {
+    z-index: 9999;
+}
+.modal {
+    overflow-y: auto;
+}
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+  /* ===============*/
+
+/* Estilos para el ícono en la cabecera de la tarjeta */
+.card-header .icon-wrapper {
+    position: absolute;
+    top: -1rem;
+    /* Ajusta esta medida para que el círculo sobresalga adecuadamente */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3rem;
+    /* Tamaño del círculo */
+    height: 3rem;
+    /* Tamaño del círculo */
+    background-color: #fff;
+    /* Color de fondo del círculo */
+    border: 3px solid #ddd;
+    /* Grosor y color del borde del círculo */
+    border-radius: 50%;
+    /* Redondea el borde para formar un círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el ícono dentro del círculo */
+.icon-wrapper i {
+    color: #666;
+    /* Color del ícono */
+    /* Ajusta el tamaño del ícono si es necesario */
+}
+
+/* Ajustes adicionales para la cabecera de la tarjeta para hacer espacio para el ícono */
+.card-header {
+    padding-top: 2rem;
+    /* Asegúrate de que haya suficiente espacio para el círculo en la parte superior */
+    /* Tus otros estilos de .card-header van aquí */
+}
+
+/* Estilos opcionales para añadir una sombra al círculo del ícono */
+.icon-wrapper {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-menu {
+    min-height: 170px;
+    /* Ajusta este valor al que prefieras */
+    /* Mantén las demás propiedades existentes */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    /* Espacio entre las tarjetas, ajusta según tu diseño */
+}
+
+.card-container .card {
+    flex: 0 0 auto;
+    /* Evita que las tarjetas se estiren */
+}
+
+/* Estilos específicos para las tarjetas con la clase card-styled */
+.card-styled .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-styled .card-text {
+    font-size: 1rem;
+}
+
+.card-styled {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-styled .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-styled .card-body h5, 
+.card-styled .card-body p {
+    margin: 0;
+}

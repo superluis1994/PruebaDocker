@@ -1,0 +1,4 @@
+#archivos ignorados
+.env 
+.htaccess
+#manifest.json
